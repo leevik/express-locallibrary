@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% messages.map(message => { %>
+      <li><%= message.text %></li>
+      <li><%= message.user %></li>
+      <li><%= message.added %></li>
+    <% }) %>
+    <a href="/messages">Create a new message page</a>
+  </body>
+</html>
